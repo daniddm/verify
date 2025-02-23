@@ -1,0 +1,27 @@
+<!-- app.component.html -->
+<div class="container" style="font-family: 'Times New Roman', Times, serif;">
+    <h1>Detector de Textos Generados por IA o Humano</h1>
+    
+    <div class="form-group">
+      <label for="newsText">Ingrese el texto a analizar:</label>
+      <textarea 
+        id="newsText"
+        [(ngModel)]="newsText" 
+        class="form-control" 
+        rows="6"
+        placeholder="Pegue aquí el texto...">
+      </textarea>
+    </div>
+  
+    <button 
+      (click)="analyzeNews()" 
+      class="submit-button"
+      [disabled]="!newsText">
+      Analizar Texto
+    </button>
+
+    <div *ngIf="result !== null" class="result mt-4">
+      <h3>Resultado del análisis:</h3>
+      <p>Probabilidad de ser IA: {{ (result * 100).toFixed(2) }}%</p>
+    </div>
+</div>
