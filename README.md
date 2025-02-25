@@ -8,6 +8,14 @@ When the user inserts a text, Verify analyze it and shows a the AI ratio in the 
 
 The Frontend of verify was implemented with Angular, it is a simple Frontend design oriented for testing purposes and is not full prepered for launching in production.
 
+<b>Intrface
+
+![](Verify-empty-interface.png)
+
+Intrface with clasification results </b>
+
+![](Verify-with-text.png)
+
 ## Backend
 
 The integration was implemented in Python using FastApi and unicron libraries, when launching the code, a local API address will be available to interact with the model.
