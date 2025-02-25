@@ -8,11 +8,11 @@ When the user inserts a text, Verify analyze it and shows a the AI ratio in the 
 
 The Frontend of verify was implemented with Angular, it is a simple Frontend design oriented for testing purposes and is not full prepered for launching in production.
 
-<b>Intrface
+<b>Interface
 
 ![](Verify-empty-interface.png)
 
-Intrface with clasification results </b>
+Interface with clasification results </b>
 
 ![](Verify-with-text.png)
 
